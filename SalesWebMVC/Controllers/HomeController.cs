@@ -10,6 +10,8 @@ namespace SalesWebMVC.Controllers
 {
     public class HomeController : Controller
     {
+        private const string email = "olintho@gmail.com";
+
         public IActionResult Index()
         {
             return View();
@@ -17,7 +19,7 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Sales Web MVC App from C#";
 
             return View();
         }
@@ -25,6 +27,7 @@ namespace SalesWebMVC.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
+            ViewData["email"] = email;
 
             return View();
         }
