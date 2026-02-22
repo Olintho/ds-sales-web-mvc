@@ -5,9 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SalesWebMVC.Models;
+using SalesWebMVC.Models.ViewModel;
 
 namespace SalesWebMVC.Controllers
 {
+    // HEREIN : OSJ : Stopped in chapter #255
     public class HomeController : Controller
     {
         private const string email = "olintho@gmail.com";
